@@ -16,7 +16,7 @@ const BALLSIZE = 7;
 
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
   for(var i =0; i<50; i++) {
     var x = random(-width*MAPSIZE, width*MAPSIZE);
@@ -67,6 +67,7 @@ function setup() {
 }
 
 function draw() {
+
   background(0);
   //мы перемещаем начало нашего холста, чтобы наша капля всегда была в центре
   translate(width / 2, height / 2);
