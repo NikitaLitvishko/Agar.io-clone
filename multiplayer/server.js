@@ -81,7 +81,7 @@ function newConnection(socket) {
                 console.log("Disconnection from : "+clients[i].name + " "+id);
                 io.to(id).emit('forceDisconnect');
                 clients.splice(clients[id], 1);
-                once = false;
+                
             }
         }
          once = true;
