@@ -43,8 +43,8 @@ function setup() {
   //если мы получим сигнал об отключении
   socket.on('forceDisconnect', function(){
     console.log("deco");
-    window.location="game_over.html";
     socket.disconnect();
+    window.location="game_over.html";
 });
   //обновление позиции других клиентов
   socket.on('heartbeat',
